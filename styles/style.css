@@ -57,20 +57,36 @@ button {
     font-size: 11px;
 }
 
+/* DRY + KISS так как не повторяется участок кода, 
+а с другой строны упрощается чтение кода*/
+.size_11{
+    font-size: 11px;
+}
+
+.size_14{
+    font-size: 14px;
+}
+
+.size_18{
+    font-size: 18px;
+}
+
+.size_20{
+    font-size: 20px;
+}
+/*  */
+
 .header{
     background-color: black;
 }
 
 .logo {
     color: #E3B873;
-    font-size: 11px;
-    line-height: 15px;
 }
 
 .header-navigation {
     list-style: none;
     display: flex;
-    font-size: 11px;
 }
 
 .header-navigation-item{
@@ -90,7 +106,6 @@ button {
 .phone-number{
     color: #E3B873;
     text-decoration: underline;
-    font-size: 11px;
     line-height: 15px;
     
     margin-right: 45px;
@@ -166,7 +181,6 @@ button {
     margin-right: 20px;
     background-color:#E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-    font-size: 11px;
     line-height: 15px;
     text-align: center;
 }
@@ -175,7 +189,6 @@ button {
     width: 207px;
     border: 1px solid #FFFFFF;
     background: rgba(0, 0, 0, 0);
-    font-size: 11px;
     line-height: 15px;
 }
 
@@ -194,7 +207,6 @@ button {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.3);
 }
@@ -236,7 +248,6 @@ button {
     margin: 0 auto;
     margin-top: 45px;
     position: relative;
-    /* некрасивое решение */
 }
 .content{
     font-family: 'Nunito Sans';
@@ -254,12 +265,10 @@ button {
     text-transform: uppercase;
     color: #E3B873;
 }
+
 .content > p{
     font-family: 'Nunito Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 27px;
     color: #FFFFFF;
     margin-top: 34px;
     margin-bottom: 0;
@@ -287,10 +296,8 @@ button {
     left: 0px;
     margin: 0;
     padding: 0;
-    font-family: 'Yeseva One';
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;
     text-align: initial;
     color: #E3B873;
 }
@@ -350,7 +357,6 @@ img {
 .swiper-button-next{
     background-image:url('../images/next.svg') ;
 }
-/* 3 секция */
 
 .control {
     height: 725px;
@@ -394,11 +400,8 @@ img {
     margin: 0;
     font-family: 'Nunito Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
     line-height: 37px;
     text-align: center;
-
     color: #363636;
 }
 
@@ -436,7 +439,6 @@ img {
     border: 0;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     padding-bottom: 8px;
-    font-size: 14px;
     width: 231px;
     color: #363636;
     outline: none;
@@ -459,7 +461,6 @@ img {
 
     color: #FFFFFF;
 }
-/* чекбокс в форме*/
 
 .first-checkbox{
     margin-top: 37.24px;
@@ -487,8 +488,6 @@ img {
 .checkbox:checked + .fake::before{
     opacity: 1;
 }
-
-/* 4 секция */
 
 .repair {
     height: 1851px;
@@ -581,10 +580,7 @@ img {
 }
 
 .list > span {
-    font-family: 'Yeseva One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
     line-height: 25px;
     color: #363636;
     display: block;
@@ -605,8 +601,6 @@ img {
     text-align: center;
     font-family: 'Yeseva One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -638,7 +632,6 @@ img {
     width: 374.81px;
     display: flex;
     justify-content: flex-end;
-    /* align-content: space-between;  */
 }
 
 .advantages-list {
@@ -650,8 +643,6 @@ img {
     position: relative;
     font-family: 'Nunito Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 19px;
     color: #363636;
 }
@@ -663,9 +654,6 @@ img {
     min-height: 42px;
     font-family: 'Nunito Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
     color: #363636;
     padding: 5px 5px 5px 52px;
     background: url('../images/autolist-style-image.svg') no-repeat left -16px top -13px/ 77px 77px;
@@ -674,7 +662,6 @@ img {
 .request {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     margin-top: 106px;
     padding: 28px 49px;
     width: 506px;
@@ -685,18 +672,14 @@ img {
 }
 
 .request > span {
-    /* margin-top: 28px; */
     font-family: 'Nunito Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 39px;
 }
 
 .request > form > .client-contacts {
-    /* display: block; */
     color: rgba(255, 255, 255, 0.5);
     height: 50px;
     width: 408px;
@@ -717,7 +700,6 @@ img {
 }
 
 .request-input{
-    /* display: block; */
     width: 100%;
     color: rgba(255, 255, 255, 0.5);
     
@@ -737,9 +719,6 @@ img {
     align-self: center;
     font-family: 'Nunito Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
     color: #E3B873;
     text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
@@ -751,7 +730,7 @@ img {
     background-size: cover;
 
 }
-/* 5 секция */
+
 .designs{
     background-image: url('../images/designs.jpg');
     background-size: cover;
@@ -764,7 +743,6 @@ img {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    /* padding-top: ; */
     max-width: 1250px;
     height: 629px;
     
@@ -796,7 +774,6 @@ img {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
     line-height: 26px;
     color: #FFFFFF;
     
@@ -819,7 +796,6 @@ img {
     display: grid;
     grid-template: repeat(20, 1fr) / repeat(2, 1fr);
     column-gap: 43px;
-    /* gap: 40px; */
 }
 
 .gallery-item:nth-of-type(1) {
@@ -837,7 +813,7 @@ img {
 .gallery-item:nth-of-type(4) {
     grid-row: 7 / 20;
 }
-/* 5 секция */
+
 .customer-showcase {
     height: 1107px;
     padding-top: 110.5px;
@@ -847,8 +823,6 @@ img {
     background-position: bottom 0px right 0px;
 }
 .customer {
-    /* display: flex; */
-    /* justify-content: space-between; */
     margin: 0 auto;
     max-width: 1236px;
     text-align: center;
@@ -862,7 +836,6 @@ img {
 .customer > span {
     margin: 0 0 39px;
     font-style: normal;
-    font-size: 18px;
     line-height: 29px;
     color: #363636;
 }
@@ -885,7 +858,6 @@ img {
     display: flex;
     margin-bottom: 22px;
     align-items: center;
-    font-size: 18px;
     font-family: 'Yeseva One';
     color: #181818;
 }
@@ -932,7 +904,6 @@ img {
     color: white;
     font-size: 17px;
     
-    /* align-content: center; */
 }
 
 .apartments > div > img {
@@ -941,14 +912,10 @@ img {
     margin-right: 15px;
 }
 
-    
-    /* 6 секция padding-top: 275.67px;*/
 .location {
     height: 954px;
-    /* text-align: center; */
     background-image: url('../images/background_location.png');
     background-size: cover;
-    /* background-position: top 222px right 0; */
     background-repeat: no-repeat;
 }
 
@@ -980,7 +947,6 @@ img {
     padding: 34px 0 45px;
     text-align: center;
     font-family: 'Yeseva One';
-    font-size: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -1021,7 +987,6 @@ address {
     height: 51px;
     width: 589px;
     font-family: 'Yeseva One';
-    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     font-style: normal;
@@ -1052,8 +1017,6 @@ address {
 .map {
     margin-top: 43.29px;
     background-image: url('../images/map.png');
-    /* background-size: cover;
-    object-fit: fill; */
     width: 925px;
     height: 465px;
 }
@@ -1105,13 +1068,21 @@ footer {
         justify-content: center;
     }
 
-    .title-wrapper {
-        width: 100%;
-        left: unset;
+    .title-wrapper .title {
+        line-height: 30px;
+        font-size: 23px;
     }
 
     .title-wrapper p {
+        line-height: 19px;
+        font-size: 14px;
         margin: 0;
+        margin: 16px 0 32px;
+    }
+
+    .title-wrapper {
+        width: 100%;
+        left: unset;
     }
 
     .title-wrapper .btn-wrapper {
@@ -1213,10 +1184,6 @@ footer {
         background-image:url('../images/next2.svg') ;
     }
 
-
-
-
-
     .control {
         height: unset;
         padding-top: 58px; 
@@ -1228,10 +1195,9 @@ footer {
         font-size: 22px;
         height: unset;
     }
+    
     .video-control {
         height: 50vw;
-        /*height: 60vw;
-         поехала верстка, хотя так более похоже на макет */
     }
 
     .button-play {
@@ -1312,12 +1278,6 @@ footer {
     .repair > .types-of-repair > .types > .repair-example-card:last-of-type {
         margin-bottom: 0;
     }
-
-    /* .repair-example-card {
-        min-width: 340px;
-        min-height: 484px;
-    } */
-
 
     .designs {
         height: unset;
@@ -1443,9 +1403,7 @@ footer {
     }
 
     address {
-        font-size: 18px;
         align-self: center;
-        /* height: 51px; */
         width: 340px;
     }
 
@@ -1478,6 +1436,7 @@ footer {
     }
 }
 
+/* YAGNI удаляем эту часть, убираемнеиспользуемые участики кода
 @media screen and (max-width: 600px) {
     .title-wrapper .title {
         line-height: 30px;
@@ -1490,4 +1449,4 @@ footer {
         margin: 0;
         margin: 16px 0 32px;
     }
-}
+} */
